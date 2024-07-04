@@ -1,11 +1,11 @@
 a=10
 b=2
 mul=a*b
-sub=a-b
 add=a+b
+sub=a-b
 div=a/b
 
-print("multiplication",mul)
-print("multiplication",sub)
-print("multiplication",add)
-print("multiplication",div)
+print("Multiplication: ",mul)
+print("Addition: ",add)
+print("Subtracation: ",sub)
+print("Division: ",div)

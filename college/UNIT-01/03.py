@@ -1,7 +1,8 @@
-a=int(input("enter no1: "))
-b=int(input("enter no2: "))
-c=int(input("enter no3: "))
-if a>b:
+a=int(input("Enter no1: "))
+b=int(input("Enter no2: "))
+c=int(input("Enter no3: "))
+
+if a>c:
     print(a," is largest number")
 elif b>c:
     print(b," is largest number")
