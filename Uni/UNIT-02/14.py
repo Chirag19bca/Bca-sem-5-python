@@ -1,0 +1,12 @@
+list=[i for i in range(0,9)]
+print("original list:")
+print(list)
+list.append(10)
+print("\n after adding new element in list:")
+print(list)
+list.insert(3,11)
+print("\n after updating element in list:")
+print(list)
+list.remove(8)
+print("\n after removing element(8) in list:")
+print(list)
