@@ -1,14 +1,12 @@
-class student:
-    def __init__(self):#IT is defualt function
-        self.name="sachin"
-        self.age = 23
-        self.mark = 79
-        
-    #Instance Method
-    def display(self):
-        print("Name: ",self.name)
-        print("Age: ",self.age)
-        print("Mark: ",self.mark)
+class bookx:
+    def __init__(self,pages):
+        self.pages=pages
+    def __add__(self,other):
+        return self.pages+other.pages
 
-s=student()
-s.display()
+class booky:
+    def __init__(self,pages):
+        self.pages=pages        
+b1=bookx(100)
+b2=booky(150)
+print("Total pages: ",(b1+b2))

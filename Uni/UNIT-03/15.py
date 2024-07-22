@@ -1,14 +1,23 @@
-class student:
-    def __init__(self):#IT is defualt function
-        self.name="sachin"
-        self.age = 23
-        self.mark = 79
-        
-    #Instance Method
-    def display(self):
-        print("Name: ",self.name)
-        print("Age: ",self.age)
-        print("Mark: ",self.mark)
-
-s=student()
-s.display()
+class dog:
+    def bark(self):
+        print("Bow Wow")
+class duck:
+    def talk(self):
+        print("Quack Quack")
+class human:
+    def talk(self):
+        print("Hello,Hi")
+#this method accepts an object and calls talk() method
+def call_talk(obj):
+    if hasattr(obj,"talk"):
+        obj.talk()
+    elif hasattr(obj,"bark"):
+        obj.bark()
+    else:
+        print("wrong object password")
+x=duck()
+call_talk(x)
+x=human()
+call_talk(x)
+x=dog()
+call_talk(x)

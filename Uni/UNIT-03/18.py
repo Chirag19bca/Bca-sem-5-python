@@ -1,14 +1,11 @@
-class student:
-    def __init__(self):#IT is defualt function
-        self.name="sachin"
-        self.age = 23
-        self.mark = 79
-        
-    #Instance Method
-    def display(self):
-        print("Name: ",self.name)
-        print("Age: ",self.age)
-        print("Mark: ",self.mark)
+import math
+class square:
+    def area(self,x):
+        print("Area of square: ",(x*x))
 
-s=student()
-s.display()
+class circle(square):
+    def area(self,x):
+        print("Area of circle:%.2f "%(math.pi*x*x))
+
+c=circle()
+c.area(4)

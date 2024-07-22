@@ -1,14 +1,12 @@
-class student:
-    def __init__(self):#IT is defualt function
-        self.name="sachin"
-        self.age = 23
-        self.mark = 79
-        
-    #Instance Method
-    def display(self):
-        print("Name: ",self.name)
-        print("Age: ",self.age)
-        print("Mark: ",self.mark)
-
-s=student()
-s.display()
+class father:
+    def height(self):
+        print("height is 6.0 foot")
+class mother:
+    def complexion(self):
+        print("complexion is fair")
+class child(father,mother):
+    pass
+c=child()
+print("child inherited qualities: ")
+c.height()
+c.complexion()
