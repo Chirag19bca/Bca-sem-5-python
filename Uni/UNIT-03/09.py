@@ -1,4 +1,4 @@
-from student import student
+from student import student#first student is filename second student is classname
 s=student()
 s.setid(3013)
 s.setname("Sadhu Chirag")

@@ -1,5 +1,5 @@
 class Emp:
-    def __init__(self,id,name,sal):#IT is defualt function
+    def __init__(self,id,name,sal):#IT is defualt constructor
         self.id=id
         self.name = name
         self.salary = sal

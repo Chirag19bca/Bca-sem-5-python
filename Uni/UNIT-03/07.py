@@ -18,11 +18,14 @@ b=bank(name)
 while(True):
     print("\n d/D -Deposit,w/W -Withdrawal,e/E -Exit")
     choice=input("Enter your Choice: ")
-    if choice== "e" or choice== "E":
+    if choice== "e" or choice == "E":
         sys.exit()
-    amount=float(input("Enter Amount: "))
-    if choice== "d" or choice== "D":
+    if choice== "d" or choice == "D":
+        amount=float(input("Enter Amount: "))
         print("Balance after deposit: ",b.deposit(amount))
-    elif choice== "w" or choice== "W":
+    elif choice== "w" or choice == "W":
+        amount=float(input("Enter Amount: "))
         print("Balance after withdrawals: ",b.withdrawals(amount))
+    else:
+        print("wrong choice")
     
